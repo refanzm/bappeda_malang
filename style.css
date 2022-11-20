@@ -1,0 +1,98 @@
+/*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  height: 60px;
+  padding: 20px;
+  background: #fff;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 2rem 8rem 2rem 2rem;
+}
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+.header-icons a {
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.header-icons .account {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-icons .account img {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Side menubar section */
+.side_navbar a {
+  width: 100%;
+  padding: 0.8rem 3rem;
+  font-weight: 500;
+  font-size: 15px;
+  color: #2fcc71;
+}
+.side_navbar a:hover {
+  background: #d1e7dd;
+}
+
+/* Main Body Section */
+.main-body {
+  width: 80%;
+  padding-left: 1rem;
+}
+
+.promo_card {
+  width: 100%;
+  color: #fff;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 0.5rem 1rem 1rem 3rem;
+  background: rgb(37, 37, 37);
+}
+.promo_card h1,
+.promo_card span,
+button {
+  margin: 10px;
+}
+.promo_card button {
+  display: block;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Sidebar Section */
+.sidebar {
+  width: 15%;
+  padding: 1rem 1rem;
+  background: #fff;
+}
+.sidebar h4 {
+  margin-bottom: 1.5rem;
+}
