@@ -53,41 +53,113 @@
       </div>
       <div class="main-body">
         <form class="shadow p-3 mb-5 bg-white rounded">
-          <div style="background-color: #addca1" class="rounded">
-            <img src="img/logo.png" style="width: 70%; height: 190px; display: block; margin: auto; min-width: 70%; min-height: 190px" alt="" />
-          </div>
-          <div style="margin-top: 15px;">
-            <div class="form-group">
-                <label for="formInputNamaKegiatan">Nama Kegiatan*</label>
-                <input type="text" class="form-control" id="formInputNamaKegiatan" placeholder="Ketik Nama Kegiatan" required/>
+          <div style="margin-top: 35px; margin-left: 20px">
+            <div class="mb-3 row">
+              <label for="judulKegiatan" class="col-sm-3 col-form-label">Judul Kegiatan</label>
+              <div class="col">
+                <input type="text" class="form-control" id="judulKegiatan" placeholder="Pilih Kegiatan" required />
+              </div>
             </div>
-            <div class="form-group">
-                <label for="formInputDeskripsiKegiatan">Deskripsi Kegiatan*</label>
-                <textarea class="form-control" id="formInputDeskripsiKegiatan" rows="3" placeholder="Deskripsi Kegiatan" required></textarea>
+            <div class="mb-3 row">
+              <label for="judulLaporan" class="col-sm-3 col-form-label">Judul Laporan</label>
+              <div class="col">
+                <input type="text" class="form-control" id="judulLaporan" placeholder="Ketik Judul Lapporan Anda" required />
+              </div>
             </div>
-            <div>
-                <label for="formInputTanggalMulai">Tanggal Mulai*</label>
-                <input type="date" class="form-control" id="formInputTanggalMulai" required>
+            <div class="mb-3 row">
+              <label for="lokasiKegiatan" class="col-sm-3 col-form-label">Lokasi Kegiatan</label>
+              <div class="col">
+                <input type="text" class="form-control" id="lokasiKegiatan" placeholder="Ketik Lokasi Kegiatan" required />
+              </div>
             </div>
-            <div>
-                <label for="formInputTanggalSelesai">Tanggal Selesai*</label>
-                <input type="date" class="form-control" id="formInputTanggalSelesai" required>
+            <div class="mb-3 row">
+              <label for="deskripsiKegiatan" class="col-sm-3 col-form-label">Deskripsi Kegiatan</label>
+              <div class="col">
+                <textarea class="form-control" id="deskirpsiKegiatan" rows="3" placeholder="Ketik Deskripsi Kegiatan" required></textarea>
+              </div>
             </div>
-            <div class="form-group">
-                <label for="formInputLokasiKegiatan">Lokasi Kegiatan*</label>
-                <input type="text" class="form-control" id="formInputLokasiKegiatan" placeholder="Ketik Lokasi Kegiatan" required>
+            <div class="mb-3 row">
+              <label for="progress" class="col-sm-3 col-form-label">Progres</label>
+              <div class="col">
+                <textarea class="form-control" id="progress" rows="3" placeholder="Deskripsi progress terbaru..." required></textarea>
+              </div>
             </div>
-            <div class="form-group">
-                <label for="formInputLokasiKegiatan">Penanggung Jawab Kegiatan*</label>
-                <input type="text" class="form-control" id="formInputLokasiKegiatan" placeholder="Nama Penanggung Jawab Kegiatan" required>
+            <div class="mb-3 row">
+              <label for="tanggalMulai" class="col-sm-3 col-form-label">Tanggal Mulai</label>
+              <div class="col-sm-6">
+                <input type="date" class="form-control" id="tanggalMulai" required />
+              </div>
             </div>
-            <div class="form-group">
-                <label for="formInputLokasiKegiatan">Dokumentasi Kegiatan*</label>
-            <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="validatedCustomFile" required>
+            <div class="mb-3 row">
+              <label for="bidang" class="col-sm-3 col-form-label">Bidang</label>
+              <div class="col-sm-6">
+                <select class="browser-default custom-select border border-secondary border-opacity-25 rounded" id="statusLaporan">
+                  <option selected>Pilih bidang...</option>
+                  <option value="1">Bidang Perencanaan Pembangunan Daerah</option>
+                  <option value="2">Bidang Perencanaan Pengendalian dan Evaluasi</option>
+                  <option value="3">Bidang Ekonomi dan Sumber Daya Alam</option>
+                  <option value="4">Bidang Pemerintahan dan Pembangunan Manusia</option>
+                  <option value="5">Bidang Infrastruktur dan Kewilayahan</option>
+                  <option value="6">Sekretariat</option>
+                  <option value="7">Media Sosial</option>
+                </select>
+                <!-- <input list="bidang" name="bidang" id="bidang" placeholder="Pilih bidang...">
+                  <datalist id="bidang">
+                    <option value="Bidang Perencanaan Pembangunan Daerah">
+                    <option value="Bidang Perencanaan Pengendalian dan Evaluasi">
+                    <option value="Bidang Ekonomi dan Sumber Daya Alam">
+                    <option value="Bidang Pemerintahan dan Pembangunan Manusia">
+                    <option value="Bidang Infrastruktur dan Kewilayahan">
+                    <option value="Sekretariat">
+                    <option value="Media Sosial">
+                  </datalist> -->
+                <!-- <div class="dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle border border-opacity-25" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Semua Bidang
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Bidang Perencanaan Pembangunan Daerah</a>
+                      <a class="dropdown-item" href="#">Bidang Perencanaan Pengendalian dan Evaluasi</a>
+                      <a class="dropdown-item" href="#">Bidang Ekonomi dan Sumber Daya Alam</a>
+                      <a class="dropdown-item" href="#">Bidang Pemerintahan dan Pembangunan Manusia</a>
+                      <a class="dropdown-item" href="#">Bidang Infrastruktur dan Kewilayahan</a>
+                      <a class="dropdown-item" href="#">Sekretariat</a>
+                      <a class="dropdown-item" href="#">Media Sosial</a>
+                    </div>
+                  </div> -->
+              </div>
             </div>
-           </div>
-            <button type="submit" class="btn btn-success">Upload</button>
+            <div class="mb-3 row">
+              <label for="statusLaporan" class="col-sm-3 col-form-label">Status Laporan</label>
+              <div class="col-sm-6">
+                <div class="" style="height: 2rem">
+                  <select class="browser-default custom-select border border-secondary border-opacity-25 rounded" id="statusLaporan">
+                    <option selected>Status Kegiatan</option>
+                    <option value="1">Progress</option>
+                    <option value="2">Selesai</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="filePendukung" class="col-sm-3 col-form-label">File Pendukung</label>
+              <div class="col">
+                <div id="container">
+                  <div class="drag-area">
+                    <div class="icon">
+                      <img src="icon/image-add-line.png" alt="" />
+                    </div>
+                    <span class="button p-2"> Upload a file</span><span class="header">or drag and drop</span>
+                    <input type="file" id="filePendukung" hidden />
+                    <span class="support">JPEG, JPG, PNG up to 5MB</span>
+                  </div>
+                  <script src="js/script.js"></script>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-row-reverse">
+              <button type="submit" class="btn btn-success">Upload</button>
+            </div>
           </div>
         </form>
       </div>
