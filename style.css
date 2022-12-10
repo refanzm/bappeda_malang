@@ -67,26 +67,6 @@
   padding-left: 1rem;
 }
 
-.promo_card {
-  width: 100%;
-  color: #fff;
-  margin-top: 10px;
-  border-radius: 8px;
-  padding: 0.5rem 1rem 1rem 3rem;
-  background: rgb(37, 37, 37);
-}
-.promo_card h1,
-.promo_card span,
-button {
-  margin: 10px;
-}
-.promo_card button {
-  display: block;
-  padding: 6px 12px;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 /* Sidebar Section */
 .sidebar {
   width: 15%;
